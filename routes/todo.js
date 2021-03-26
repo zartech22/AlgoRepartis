@@ -6,7 +6,6 @@ const ApiController = require('../controller/ToDoController');
 
 const { createTodo, deleteTodo, getTodo, updateTodo } = new ApiController();
 
-// todoRoute.get('/todo/:id', (req, res) => controller.getTodo(req, res));
 todoRoute.get('/todo/:id', getTodo);
 
 todoRoute.post('/todo', createTodo);
